@@ -1,0 +1,15 @@
+{
+  "name": "apigee-snapshot",
+  "version": "1.0.0",
+  "description": "create a snapshot from an apigee release ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bselistre",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
