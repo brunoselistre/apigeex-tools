@@ -1,0 +1,5 @@
+{   
+    "environments": [""],
+    "apiProxies":   [ { "name": "hello-world" } ], 
+    "sharedFlows":  [ { "name": "duumy" } ]
+}
