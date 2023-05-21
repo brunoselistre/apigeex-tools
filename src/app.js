@@ -1,11 +1,11 @@
 // Importing configuration
-const config = require("../config.json");
+require('dotenv').config()
 const axios = require("axios");
 
 // Setting up constants
-const TOKEN = config.token;
-const ORG = config.organization;
-const ENVS = config.environments;
+const TOKEN = process.env.TOKEN;
+const ORG = process.env.ORG;
+const ENVS = process.env.ENVS;
 
 // Creating axios instance
 const apigee = axios.create({
