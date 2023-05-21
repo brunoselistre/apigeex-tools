@@ -8,33 +8,34 @@ Before running the script, make sure you have the following:
 
 - Node.js (version 14 or later)
 - An Apigee account with read and api permissoin
-- A configuration file (`config.json`) that specifies the organization name, access token, and list of environments, API proxies, and shared flows to include in the snapshot
+- A configuration file (`settings.json`) that specifies the list of environments, API proxies, and shared flows to include in the snapshot
 
 ## Installation
 
 1. Clone or download the script to your local machine.
-2. Open a terminal window and navigate to the directory where the script is saved.
-3. Run `npm install` to install the required dependencies.
+2. Run `npm install` to install the required dependencies.
+
+## Configuration
+The script requires a configuration file (`.env`) that specifies the following:
+
+    TOKEN=your-google-access_token
+    ORG=your-apigee-organization
+    ENVS=["list","your","envs"]
+
 
 ## Usage
 
-To generate a snapshot, run the following command:
+1. Navigate to the directory `/get_snapshot` and add the snapshot information at `seetings.json`
 
-```
-npm start
-```
+2. Run the following command:
+
+    ```
+    npm run snapshot
+    ```
 
 The script will retrieve information about API proxy and shared flow-deployments, revisions, and other metadata and create a snapshot in JSON format. The snapshot will be saved in the `./snapshots` directory with a file name that includes the organization name.
 
-## Configuration
 
-The script requires a configuration file (`config.json`) that specifies the following:
-
-- `organization`: The name of the Apigee organization to generate a snapshot for.
-- `token`: An access token with the read and api privileges for the organization.
-- `environments`: An array of environment to include in the snapshot.
-- `apiProxies`: An array of objects that specify the names of API proxies to include in the snapshot.
-- `sharedFlows`: An array of objects that specify the names of shared-flows to include in the snapshot.
 
 
 ## License

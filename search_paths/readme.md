@@ -4,8 +4,8 @@ This Node.js script allows you to search for a specific basepath within the depl
 
 ## Prerequisites
 
-- Node.js (version 10 or higher)
-- npm (Node Package Manager)
+- Node.js (version 14 or later)
+- An Apigee account with read and api permissoin
 
 ## Getting Started
 
